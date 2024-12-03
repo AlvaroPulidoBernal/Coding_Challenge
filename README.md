@@ -29,8 +29,42 @@ The application processes game results and computes a league ranking table.
     Lions 4, Grouches 0
     ```
 - **Output**: Ordered league ranking table (from most to least points), formatted as:
-- 1. Tarantulas, 6 pts
-- 2. Lions, 5 pts
-- 3. FC Awesome, 1 pt
-- 3. Snakes, 1 pt
-- 5. Grouches, 0 pts
+  ```
+   1. Tarantulas, 6 pts
+   2. Lions, 5 pts
+   3. FC Awesome, 1 pt
+   3. Snakes, 1 pt
+   5. Grouches, 0 pts
+  ```
+
+  ---
+
+## Rules
+1. A **win** is worth **3 points**, a **draw** (tie) is worth **1 point**, and a **loss** is worth **0 points**.
+2. Teams with the **same number of points**:
+ - Share the same rank.
+ - Are listed in **alphabetical order** within their rank.
+
+---
+
+## Guidelines
+- Use libraries installed via a common package manager (e.g., `pip`) if necessary, but do not commit the installed packages.
+- Include **automated tests**.
+- Document any **complicated setup steps**.
+
+---
+
+## Platform Support
+- The solution will run in a **Unix-like environment** (e.g., OS X).
+- Use **platform-agnostic constructs** where possible to avoid issues like:
+- Line endings.
+- File path separators.
+
+---
+
+## Development Notes
+- Ensure the application is **testable** by writing automated tests.
+- Consider edge cases such as:
+  - No matches played.
+  - Ties with varying scores.
+- Handle **input validation** gracefully.

@@ -68,3 +68,15 @@ The application processes game results and computes a league ranking table.
   - No matches played.
   - Ties with varying scores.
 - Handle **input validation** gracefully.
+
+
+## General Notes
+- This solution uses BDD as a main way to run automated test
+- To run the pytest solution is necessary the libraries pytest-bdd and pytest installed throgh pip commands
+- Enable discovery either by Visual Studio or maually through the settings file and select and select pytest as the framework
+
+
+- It also comes with a simple solution that is located under the folder CHALLENGE -> Simple_test_ranking_matches
+  - In order to run the simple test go to the directory and use command line like this :
+  - python coding_test.py matches.txt
+  - For any change in the values of the input make modifications to matches.txt

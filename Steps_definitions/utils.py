@@ -86,6 +86,13 @@ def extract_match_values(datatable_str: str) -> list:
     # Remove leading/trailing whitespace and split by newlines
     datatable_str = datatable_str.strip()
     # Split the string by lines and then by the delimiter (|) to create rows
+    # This code processes a string (datatable_str) that is structured in a tabular format, 
+    # where rows are separated by newline characters (\n), and columns within each row are separated by the pipe (|) character. 
+    # datatable_str.split('\n'):
+    #       Splits the datatable_str into a list of rows based on the newline (\n) character.
+    # List comprehension [row.split('|') for row in datatable_str.split('\n')]:
+    #       Iterates over each row in the list of rows produced by split('\n').
+    #       For each row, it splits the row string into a list of columns using row.split('|'), separating the values at each pipe (|).
     rows = [row.split('|') for row in datatable_str.split('\n')]
 
     matches = []
